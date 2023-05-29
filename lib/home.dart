@@ -18,7 +18,7 @@ class HomeView extends StatelessWidget {
         children: [
           ListTile(
             leading: const Icon(Icons.qr_code_2_sharp),
-            title: Obx(() => Text(barcodeController.rawValue.value)),
+            title: Obx(() => Text(barcodeController.barcodeValue.value)),
           ),
           ListTile(
             onTap: () => Get.toNamed(AppRoutes.reservation),
